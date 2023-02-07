@@ -1,0 +1,52 @@
+*dl repose fe and be
+*open in vscode
+*create .env file
+*insert this
+
+-------->
+
+# Port number
+PORT=8000
+
+# URL of the Mongo DB
+MONGODB_URL=mongodb://127.0.0.1:27017/repose-dev
+
+# JWT
+# JWT secret key
+JWT_SECRET=thisisasamplesecret
+# Number of minutes after which an access token expires
+JWT_ACCESS_EXPIRATION_MINUTES=30000000
+# Number of days after which a refresh token expires
+JWT_REFRESH_EXPIRATION_DAYS=30000
+# Number of minutes after which a reset password token expires
+JWT_RESET_PASSWORD_EXPIRATION_MINUTES=10
+# Number of minutes after which a verify email token expires
+JWT_VERIFY_EMAIL_EXPIRATION_MINUTES=10
+
+# SMTP configuration options for the email service
+# For testing, you can use a fake SMTP service like Ethereal: https://ethereal.email/create
+SMTP_HOST=smtp.ethereal.email
+SMTP_PORT=587
+SMTP_USERNAME=wendy.rolfson12@ethereal.email
+SMTP_PASSWORD=e738x8cCbDYsg8H8vT
+EMAIL_FROM=wendy.rolfson12@ethereal.email
+
+<-----------
+
+*open mongodb atlas
+*new project
+*build a database
+*create shared
+*create cluster
+*create username, pass etc.
+*connect
+*connect using vscode
+*copy connection string
+*paste # URL of the Mongo DB after MONGODB_URL= in .env file at vscode
+*Replace <password> with the password for the sampleuser user
+
+*open terminal
+*yarn seed:import or npm seed:import
+*npm run i
+*npm run dev
+
